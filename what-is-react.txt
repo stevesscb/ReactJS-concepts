@@ -1,0 +1,24 @@
+1. What is ReactJS?
+
+- A component based javaScript library for creating interactive UIs.
+
+2. What are the benefits for using the ReactJS framework?
+
+- You're application can consist of individual components that React will efficiently update and render once data changes.
+- Since component logic is written in javasScript, you can pass rich data through your app and keep state out of the DOM.
+- Runs at very fast speeds by creating its own virtual DOM that handles requests in the most efficient way possible.
+  - This allows reacts virtual DOM to compare against the browsers DOM looking for any difference's. This allows React to re render
+    ONLY the element/data that has changed instead of the whole browser's DOM again. (REACTive to changes).
+* Simple scripting (JSX)
+* Component based architecture
+* Faster rendering
+* Stable code structure - Data flows from top to bottom (Parent to child. When small changes or bugs occur in the child component the parent is not affected.)
+* SEO - Uses server side rendering, dynamic rendering, and META tags.
+
+3. When to use ReactJS ?
+
+- organizations that run lots of user-facing functions in a high-traffic environment. It’s a great library to use if you have a website that needs to run simultaneous functions, and the basic nature of the language sets you up easily for changes in the future.
+
+4. When not to use ReactJS ?
+
+- if you have a very small project, or want to create a static website, React.js can be overkill. Simpler libraries or frameworks may be a better choice, as they can be easier and faster to set up and use.

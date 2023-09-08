@@ -1,0 +1,38 @@
+1. What is a useState hook?
+
+- It is a built in ReactJS hook that lets you add a state variable to your components.
+
+  eg: const [initialState, setInitialState] = useState(33);
+
+PARAMETERS:
+
+  initialState is the value you want the state to be initially. This can be a value of any type. But there is a special behavior for functions. This argument will be ignored after the initial render.
+
+RETURNS:
+
+  useState returns an array with exactly two values:
+
+    1 - The current state. During the first render, it will match the initialState you have passed.
+
+    2 - The set function that lets you update the state to a different value and trigger a re-render.
+
+It must be used at the top level, it will not work inside loops or conditions. If you need that, extract a new component and move the state into it.
+
+*** Calling the set function does not change the current state in the already executing code.
+
+OBJECTS/ARRAYS
+
+You can put objects and arrays into state. In React, state is considered read-only, so you should replace it rather than mutate your existing objects. For example, if you have a form object in state, don’t mutate it:
+
+    const form {
+      firstName: 'Taylor'
+    };
+
+    Eg: setForm({
+    ...form,
+    firstName: 'Taylor'
+  });
+
+2. When to use a useState hook?
+
+  - When you need to update the value or render based on an event or submission in simple cases.

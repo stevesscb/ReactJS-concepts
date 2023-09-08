@@ -1,0 +1,14 @@
+1. What is a ReactJS hook?
+
+- Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. This page lists all built-in Hooks in React.
+
+* State Hooks
+  - State lets a component store information, Eg the input value or an output value index.
+    - useState();
+    - useReducer();
+
+* Context Hooks
+* Ref Hooks
+* Effect Hooks
+* Performance Hooks
+* Your own hooks (custom hooks)

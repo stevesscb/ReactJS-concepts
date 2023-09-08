@@ -1,0 +1,18 @@
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0.5rem 1rem;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}

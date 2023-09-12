@@ -43,7 +43,7 @@ const UseRef = () => {
 
   return (
     <Card>
-      <h1>UseRef hook</h1>
+      <h1>useRef hook</h1>
       <div>
         <form onSubmit={onSubmitHandler}>
           <UserInput

@@ -1,0 +1,8 @@
+.resources {
+  text-align: left;
+}
+
+.resources li {
+  padding: 5px;
+  list-style: none;
+}

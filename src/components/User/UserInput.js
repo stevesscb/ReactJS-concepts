@@ -14,6 +14,7 @@ const UserInput = forwardRef((props, ref) => {
         onChange={props.onChange}
         className={props.className}
         onBlur={props.onBlur}
+        value={props.value}
       />
     </div>
   );

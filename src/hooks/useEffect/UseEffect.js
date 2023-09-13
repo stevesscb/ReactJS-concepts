@@ -44,7 +44,7 @@ const UseEffect = (props) => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    props.onLogin(enteredEmail, enteredPassword);
+    props.onLogin('effect');
   };
 
   return (

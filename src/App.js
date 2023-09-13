@@ -5,6 +5,7 @@ import UseState from './hooks/useState/UseState';
 import UseRef from './hooks/useRef/UseRef';
 import UseEffect from './hooks/useEffect/UseEffect';
 import UseEffectLoggedIn from './hooks/useEffect/UseEffectLoggedIn';
+import UseReducer from './hooks/useReducer/UseReducer';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -31,12 +32,12 @@ function App() {
     <Wrapper>
       <UseState />
       <UseRef />
-
       {isLoggedIn ? (
         <UseEffectLoggedIn onClick={logoutHandler} />
       ) : (
         <UseEffect onLogin={loginHandler} />
       )}
+      <UseReducer />
     </Wrapper>
   );
 }

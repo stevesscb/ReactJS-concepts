@@ -1,0 +1,19 @@
+1. What is the useReducer hook?
+
+  The useReducer hook is a built in React hook for managing more complex state than the useState hook.(A more powerful state management tool).
+
+  eg const [state, dispatch] = useReducer(reducerFn, initialState, initFn);
+
+  1. state - The state snapshot used in the component re render / re evaluation cycle.
+
+  2. dispatch - The function that can be used to dispatch a new action (i.e trigger an update of the state.) - This differs from the useState hook as it dispatches an action rather than a value.
+
+  3. reducerFn - A function that is triggered automatically once an action is dispatched via dispatchFn. It receives the latest state snapshot and should return the new updated state.
+
+  4. initialState - the initial state (optional).
+
+  5. initFn - the function to programmatically run to generate the initial state (optional). eg - Http requests..
+
+2. When is the useReducer hook used?
+
+  When you can combine multiple related states or if you have states that depend on other state.

@@ -1,0 +1,6 @@
+What is context?
+
+
+When to use context?
+
+ - On larger applications when you need to pass data through lots of components. To eliminate long 'prop chains' you can use a context component to wrap the child components making the data available to use.

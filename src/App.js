@@ -7,6 +7,10 @@ import UseEffect from './hooks/useEffect/UseEffect';
 import UseEffectLoggedIn from './hooks/useEffect/UseEffectLoggedIn';
 import UseReducer from './hooks/useReducer/UseReducer';
 
+import ThemeContextProvider from './contexts/ThemeContext';
+import Context from './contexts/Context';
+import Card from './components/UI/Card';
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -38,6 +42,9 @@ function App() {
         <UseEffect onLogin={loginHandler} />
       )}
       <UseReducer />
+      <ThemeContextProvider>
+        <Context />
+      </ThemeContextProvider>
     </Wrapper>
   );
 }

@@ -9,10 +9,12 @@ import UseReducer from './hooks/useReducer/UseReducer';
 
 import ThemeContextProvider from './contexts/ThemeContext';
 import Context from './contexts/Context';
-import Card from './components/UI/Card';
+import ModalWindow from './components/UI/modal/ModalCard';
+import ModalIndex from './components/UI/modal/Index';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [modal, showModal] = useState(false);
 
   useEffect(() => {
     const storedLoggedInUserInformation = localStorage.getItem('isLoggedIn');
@@ -34,6 +36,13 @@ function App() {
 
   return (
     <Wrapper>
+      {modal && (
+        <ModalWindow
+          closeModal={() => {
+            showModal(false);
+          }}
+        />
+      )}
       <UseState />
       <UseRef />
       {isLoggedIn ? (
@@ -45,6 +54,11 @@ function App() {
       <ThemeContextProvider>
         <Context />
       </ThemeContextProvider>
+      <ModalIndex
+        showModal={() => {
+          showModal(true);
+        }}
+      />
     </Wrapper>
   );
 }
